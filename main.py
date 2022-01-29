@@ -17,6 +17,8 @@ def run_main():
         for item in all_movies_tags_list
     ]
     all_movies_list.sort()
+    # Instead of using this method and since I know that they are already ordered I just want to reverse.
+    all_movies_tags_list = [item.getText() for item in all_movies_tags_list[::-1]]
     # Create the file with the 100 best movies.
     with open(file='best_100_files.md', mode='w') as a_file:
         a_file.write('##The best 100 movies list from according to "Empire" magazine.\n')
