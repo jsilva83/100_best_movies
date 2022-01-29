@@ -22,7 +22,6 @@ def run_main():
                 a_file.write(f'- {item[0]}: **_{item[1]}_**.\n')
             else:
                 a_file.write(f'- {item[0]}: {item[1]}.\n')
-    pass
     return
 
 
